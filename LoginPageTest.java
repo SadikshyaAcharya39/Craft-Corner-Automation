@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobject.LoginPage;
+import pageobject.ShopPage;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,6 +17,7 @@ public class LoginPageTest {
     private WebDriver driver;
     private LoginPage loginPage;
     private Properties properties;
+    private ShopPage shopPage;
 
     @BeforeEach
     public void setUp() throws IOException {
@@ -69,4 +71,5 @@ public class LoginPageTest {
     driver.switchTo().window(originalWindow);
 
     }
+
 }
