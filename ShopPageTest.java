@@ -2,7 +2,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,9 +12,7 @@ import pageobject.ShopPage;
 import java.io.IOException;
 import java.io.InputStream;
 import java.time.Duration;
-import java.time.LocalDateTime;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class ShopPageTest {
     private WebDriver driver;
@@ -135,7 +132,7 @@ public class ShopPageTest {
         checkOutButton.click();
 
         driver.close();
-        driver.switchTo().window(originalWindow);
+//        driver.switchTo().window(originalWindow);
 
 //        WebElement billingDetails = driver.findElement(shopPage.);
 
